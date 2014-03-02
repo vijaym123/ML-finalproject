@@ -50,7 +50,7 @@ def combine(filename,movieIDs,joeyDataset):
 	string = string + "\n"
 	f.write(string)
 	for movie in joeyDataset.keys():
-		string = movie
+		string = movie+ ","
 		for column in typeOrder:
 			string = string + str(joeyDataset[movie][column]) + ","
 		string += "\n"
